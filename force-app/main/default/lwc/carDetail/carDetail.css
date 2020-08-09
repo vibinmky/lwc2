@@ -1,0 +1,17 @@
+.label {
+  font-size: large;
+  display: block;
+}
+
+.carproperty {
+  margin-bottom: 3px;
+}
+
+
+.car {
+  border-radius: 5px;
+}
+
+p {
+  font-size: 15px;
+}

@@ -1,0 +1,39 @@
+<template>
+  <lightning-card title={carName} icon-name='custom:custom20'>
+    <div slot="actions">
+      <lightning-button label='Full Details' onclick={fullDetails}></lightning-button>
+    </div>
+
+    <lightning-layout multiple-rows>
+      <lightning-layout-item size="12" small-device-size="6" medium-device-size="6">
+        <div class="slds-p-horizontal_small">
+          <div class="carproperty">
+            <span class="label">Owner Name:</span>
+            <p>{carContactName}</p>
+          </div>
+          <div class="carproperty">
+            <span class="label">Milleage:</span>
+            <p>{carMileage}</p>
+          </div>
+          <div class="carproperty">
+            <span class="label">Per Day Rent:</span>
+            <p>{carPer_Day_Rent}</p>
+          </div>
+          <div class="carproperty">
+            <span class="label">Build Year:</span>
+            <p>{carBuild_Year}</p>
+          </div>
+          <div class="carproperty">
+            <span class="label">Type Name:</span>
+            <p>{carTypeName}</p>
+          </div>
+        </div>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" small-device-size="6" medium-device-size="6">
+        <img src={carPicture} alt="Car Image" class="car slds-align_absolute-center">
+      </lightning-layout-item>
+
+    </lightning-layout>
+  </lightning-card>
+
+</template>

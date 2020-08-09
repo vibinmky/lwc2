@@ -1,0 +1,19 @@
+<template>
+  <template if:true={carFound}>
+    <lightning-layout multiple-rows>
+      <lightning-layout-item size="12">
+        <lightning-tabset active-tab-value={selectedTab}>
+          <lightning-tab label='Car Details' value="cardetailstab" onactive={selectedTabHandler}>
+            <c-car-detail car={car}></c-car-detail>
+          </lightning-tab>
+          <lightning-tab label='Add Review' value="addreviewtab" onactive={selectedTabHandler}>
+            <c-add-car-review car-id={carId} onreviewadded={reviewAddedHandler}></c-add-car-review>
+          </lightning-tab>
+          <lightning-tab label='View Reviews' value="viewreviewtab" onactive={selectedTabHandler}>
+            <c-car-reviews car-id={carId}></c-car-reviews>
+          </lightning-tab>
+        </lightning-tabset>
+      </lightning-layout-item>
+    </lightning-layout>
+  </template>
+</template>

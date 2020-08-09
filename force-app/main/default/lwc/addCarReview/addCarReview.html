@@ -1,0 +1,13 @@
+<template>
+  <lightning-layout multiple-rows>
+    <lightning-layout-item size="12" padding="around-small">
+      <lightning-input label='Title' onchange={titleHandler}></lightning-input>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" padding="around-small">
+      <lightning-input-rich-text label='Review' onchange={reviewHandler}></lightning-input-rich-text>
+    </lightning-layout-item>
+    <lightning-layout-item size="12" padding="around-small">
+      <lightning-button variant='brand' label='Add Review' onclick={addReviewHandler}></lightning-button>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>
